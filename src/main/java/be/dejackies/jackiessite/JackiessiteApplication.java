@@ -15,6 +15,7 @@ public class JackiessiteApplication extends SpringBootServletInitializer {
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+		System.out.println("Starting");
 		return application.sources(applicationClass);
 	}
 
