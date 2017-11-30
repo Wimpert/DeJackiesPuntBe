@@ -26,7 +26,7 @@ repositories {
 
 war {
 	archiveName = 'ROOT.war'
-	destinationDir = file('webapps')
+	destinationDir = file('deployments')
 }
 
 dependencies {
