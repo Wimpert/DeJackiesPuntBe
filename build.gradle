@@ -14,6 +14,7 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'org.springframework.boot'
+apply plugin: 'war'
 
 group = 'be.dejackies'
 version = '0.0.1-SNAPSHOT'
