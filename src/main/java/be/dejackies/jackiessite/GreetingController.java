@@ -15,19 +15,19 @@ public class GreetingController {
 
     @RequestMapping("/greetings")
     public String greet() {
-        return "Greetings from De Jackies!";
+        return "Greetings from new server!";
     }
 
     @RequestMapping("/mail")
     public String sendMail() {
 
-        final String username = "holvoetwim@hotmail.com";
-        final String password = "rodauce2054";
+        final String username = "de_jackies@hotmail.com";
+        final String password = "spelvreugde666";
 
         Properties props = new Properties();
         props.put("mail.smtp.auth", "true");
         props.put("mail.smtp.starttls.enable", "true");
-        props.put("mail.smtp.host", "smtp.live.com");
+        props.put("mail.smtp.host", "smtp-mail.outlook.com");
         props.put("mail.smtp.port", "587");
 
 
@@ -41,7 +41,7 @@ public class GreetingController {
         try {
 
             Message message = new MimeMessage(session);
-            message.setFrom(new InternetAddress("holvoetwim@hotmail.com"));
+            message.setFrom(new InternetAddress("de_jackies@hotmail.com"));
             message.setRecipients(Message.RecipientType.TO,
                     InternetAddress.parse("holvoetwim@hotmail.com"));
             message.setSubject("Testing Subject");
